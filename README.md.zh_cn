@@ -1,0 +1,10 @@
+1、TWRP官方指导推荐在Omni 5.1或6.0中编译。
+2、如果只是编译recovery，结合 repo init 的 --depth=1 参数，代码下载量只有6G多。
+    repo init --depth=1 -u git://github.com/wangyakun11741/twrp-alone_platform_manifest.git -b master
+3、在源码目录下创建 .repo/local_manifests/devices.xml文件，填写所需的设备代码库的描述。
+4、用repo sync 命令同步代码。
+5、编译：
+. build/envsetup.sh
+lunch omni_device-eng #device是选定的机型代码
+mka recoveryimage
+

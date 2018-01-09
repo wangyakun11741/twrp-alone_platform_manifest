@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+           
+  <remote  name="TeamWin"
+           review="gerrit.twrp.me"
+           fetch="https://github.com/TeamWin" />
+
+  <remote  name="wangyakun11741"
+           review="gerrit.twrp.me"
+           fetch="https://github.com/wangyakun11741" />
+
+  <project path="device/xiaomi/aries" name="android_device_xiaomi_aries" remote="TeamWin" revision="android-5.1" />
+  <project path="device/xiaomi/cancro" name="twrp-alone_device_xiaomi_cancro" remote="wangyakun11741" revision="master" />
+
+</manifest>
